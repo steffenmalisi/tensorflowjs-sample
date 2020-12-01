@@ -1,20 +1,16 @@
 version: 1
 applications:
-  - posenetApp:
+  - appRoot: /posenet-app
+    frontend:
       phases:
-        lint:
+        preBuild:
           commands:
             - npm run lint
-        test:
-          commands:
             - npm run test
         build:
           commands:
             - npm run build
       artifacts:
-        baseDirectory: ./dist
+        baseDirectory: dist
         files:
           - '**/*'
-      cache:
-        paths: []
-    appRoot: posenet-app
