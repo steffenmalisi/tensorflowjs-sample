@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: /posenet-app
+  - appRoot: posenet-app
     frontend:
       phases:
         preBuild:
