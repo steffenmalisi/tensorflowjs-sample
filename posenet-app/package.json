@@ -60,7 +60,6 @@
   "description": "Webcomponent posenet-app following open-wc recommendations",
   "author": "posenet-app",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@tensorflow-models/posenet": "^2.2.1",
     "@tensorflow/tfjs": "^1.7.0",

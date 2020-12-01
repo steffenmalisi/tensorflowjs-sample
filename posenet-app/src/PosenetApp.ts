@@ -8,6 +8,9 @@ type DetectionConfig = {
   minPartConfidence: number;
 };
 
+/**
+ * WebComponent which is used as main app entry.
+ */
 export class PosenetApp extends LitElement {
   @internalProperty() _loaded = false;
   @internalProperty() _stream: MediaStream | null = null;
