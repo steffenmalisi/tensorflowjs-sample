@@ -52,8 +52,7 @@
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "name": "posenet-app",
