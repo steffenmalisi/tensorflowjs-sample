@@ -5,11 +5,13 @@ applications:
       phases:
         preBuild:
           commands:
+            - nvm use 12
             - npm install
             - npm run lint
             - npm run test
         build:
           commands:
+            - nvm use 12
             - npm run build
       artifacts:
         baseDirectory: dist
