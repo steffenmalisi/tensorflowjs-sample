@@ -5,15 +5,16 @@ applications:
       phases:
         preBuild:
           commands:
-            - nvm install 12.20.0
             - npm install
             - npm run lint
             - npm run test
         build:
           commands:
-            - nvm install 12.20.0
             - npm run build
       artifacts:
         baseDirectory: dist
         files:
           - '**/*'
+      cache:
+        paths:
+          - node_modules
